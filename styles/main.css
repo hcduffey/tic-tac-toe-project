@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f5f5f5;
+    background-color: #313639;
+}
+
+/* Title styles */
+.header--big {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+/* Player settings (num, names) input styles */
+.settings-container {
+    border: black 2px solid;
+    padding: 20px;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.player1-settings, .player2-settings {
+    width: 450px;
+}
+
+.player2-settings--remove {
+    display: none;
+}
+
+.player-num-select {
+    width: 260px;
+}
+
+/* Board styles */
+.container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 5px;
+    width:fit-content;
+}
+
+.container--inactive {
+    filter:brightness(50%);
+}
+
+
+.square {
+    text-align: center;
+    background-color: #f5f5f5;
+    border: 5px #f5f5f5 solid;
+}
+
+.square__token {
+    font-size: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+.square__token--x {
+    color: black;
+}
+
+.square__token--o {
+    color:red;
+}
+
+/* New game button styles */
+.btn-newgame {
+    margin-top: 1rem;
+}
+
+.btn-newgame--dark {
+    background-color: black;
+    border: none;
+    color: #f5f5f5;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn-newgame--dark:active {
+    color: black;
+    background-color: #f5f5f5;
+}
+
+/* Status messages styles */
+footer {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
